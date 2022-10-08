@@ -44,7 +44,7 @@ class Crawler:
         """
         Push the response to the parsing queue
         """
-        print(f"Got Response\n\n\n\n {resp.text}")
+        logger.info("Got Response\n\n\n\n %s", resp.text)
         #TODO: Put push to celery/redis here
 
     def make_request(self):
